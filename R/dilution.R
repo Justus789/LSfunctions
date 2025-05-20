@@ -23,7 +23,7 @@ dilution <- function(C1 = NA, V1 = NA, C2 = NA, V2 = NA) {
   for (name in names(inputs)) {
     value <- inputs[[name]]
     if (!is.na(value)) {
-      if (!is.numeric(value) || value != as.integer(value)) {
+      if (!is.numeric(value)) {
         stop(paste("Error:", name, "must be a numeric integer."))
       }
     }
