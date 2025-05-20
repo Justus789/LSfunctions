@@ -1,0 +1,77 @@
+---
+title: "LSfunctions"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{LSfunctions}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(LSfunctions)
+```
+
+This vignette will show more of the functions included in this package.
+
+gram_change() is used as conversion calculator.
+In Life Sciences you often have to calculate a conversion when making a solution, dilutions or making a pipetting scheme.
+Now this function is made for mass, kg, g or mg. Seeing as this is only used for conversion you can just as easily use it for liters for dilutions or pippeting schemes
+Because this is annoying especially if you don't have a calculator around, i've made a function for it.
+
+Just give gram_change() the integer you currently have with the unit it has, also give the desired unit.
+For most conversions there is a conversion factor. The most used for a pipetting scheme are included. The integer you have can be any integer. For the unit you can use the units of mass, such as: "mg" or "ug". With the desired_unit input you can put the unit you desire such as: "ng" or "g"
+
+```{r conversion}
+
+gram_change(53.3752, "g", "mg")
+
+
+```
+dilution() is used to calculate what is needed for a dilution.
+The standard formula for diluting is: C1 * V1 = C2 * V2.
+This function can calculate any of these four if the other 3 are given.
+Usefull when diluting and no calculator is around.
+
+The function detects if more or less than 3 values are given. You just have to show which value is which part of the formula. What i mean here is you can put dilution(C1 = 25), but not dilution(25). Obviously there have to be 3 values but you need to tell the function which integer is which part of the formula.
+
+dilution() will show which value is missing and calculate the missing value
+```{r diluting}
+
+dilution(C1 = 20, C2 = 10, V2 = 40)
+
+```
+
+The doorzetten() function is used to give you a boost. When coming across many errors or when you just need some encouraging words this function will help.
+This function has a few predetermined inputs. These are: "ja", "nee", "bijna" en "error".
+
+```{r doorwerken} 
+
+doorzetten("bijna")
+
+```
+The last function is files(). This function is made for others like me, who get confused why a command doesn't find a directory. This function can show the current working directory and the folder structure around it. This way you can find or see the path your command should follow to find the directory.
+
+```{r structure}
+
+files("lang")
+
+
+```
+
+
+
+
+
+
+
+
+
+
+

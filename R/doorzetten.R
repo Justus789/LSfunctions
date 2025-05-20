@@ -17,7 +17,7 @@ doorzetten <- function(x) {
     return("Kom op, nog even doorwerken. Tip: Als je niet naar de tijd kijkt voorkom je tijdstress")
   }
   if (x == "bijna") {
-    return("Mooi zo, je kan een korte pauze nemen als je toch meer errors tegenkomt")
+    return("Mooi zo, als je toch weer errors tegenkomt kan je een korte pauze nemen")
   }
   if (x == "nee") {
     return("Weet je zeker dat je klaar bent? Anders zou ik toch ja invoeren bij de variable")
