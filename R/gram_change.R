@@ -1,6 +1,5 @@
 
-library(devtools)
-library(tidyverse)
+load_all()
 
 gram_change <- function(x, unit, desired_unit) {
   #check if x is numeric. x will be multiplied or divided
