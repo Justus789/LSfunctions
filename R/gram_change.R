@@ -4,7 +4,7 @@
 #' @param unit The unit of measurement used for the integer x.
 #' @param desired_unit The unit of measurement you would like the integer to be changed into.
 #'
-#' @returns A changed integer with the desired unit after
+#' @return A changed integer with the desired unit after
 #' @export
 #'
 #' @examples

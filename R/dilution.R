@@ -5,7 +5,7 @@
 #' @param C2 desired concentration
 #' @param V2 desired volume
 #'
-#' @returns The missing value needed for the dilution
+#' @return The missing value needed for the dilution
 #' @export
 #'
 #' @examples
