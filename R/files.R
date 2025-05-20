@@ -1,5 +1,5 @@
 
-#' files()
+#' files
 #'
 #' @param x either "kort" or "lang"
 #' @param dir_path a path from which you want the list of folders
