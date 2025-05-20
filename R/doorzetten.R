@@ -1,7 +1,7 @@
 
 #' Hulp bij doorwerken
 #'
-#' @param x een character string
+#' @param x moet 1 van e volgende character strings zijn: "ja", "nee", "bijna", "error"
 #'
 #' @return wat tekst om je te steunen of laten instorten
 #' @export

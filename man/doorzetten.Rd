@@ -7,7 +7,7 @@
 doorzetten(x)
 }
 \arguments{
-\item{x}{een character string}
+\item{x}{moet 1 van e volgende character strings zijn: "ja", "nee", "bijna", "error"}
 }
 \value{
 wat tekst om je te steunen of laten instorten

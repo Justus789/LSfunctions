@@ -1,5 +1,5 @@
 
-#' comparing
+#' files()
 #'
 #' @param x either "kort" or "lang"
 #' @param dir_path a path from which you want the list of folders
@@ -12,8 +12,6 @@
 #' files("lang")
 files <- function(x, dir_path = NA) {
   if (x == "kort") {
-    print("Dit is de working directory")
-    print(getwd())
     if (is.na(dir_path)) {
       print("Hieronder de lijst met je files")
       print(list.files(path = ".", recursive = TRUE, full.names = TRUE))
@@ -24,14 +22,12 @@ files <- function(x, dir_path = NA) {
     }
   }
   if (x == "lang") {
-    print("Dit is de working directory")
-    print(getwd())
     if (is.na(dir_path)) {
       print("Hieronder de lijst met je files")
       print(list.files(path = ".", recursive = TRUE, full.names = TRUE))
     }
     else {
-      print(paste("vanaf", dir_path, "gaat de structuur zo"))
+      print(paste("vanaf", paste0(getwd(), dir_path), "gaat de structuur zo"))
       print(list.files(path = paste0(getwd(), dir_path), recursive = TRUE, full.names = TRUE))
     }
   }
@@ -41,6 +37,3 @@ files <- function(x, dir_path = NA) {
   }
 }
 
-#files("kort", "/tests/")
-#files("lang")
-#files("lang", "/tests/")
