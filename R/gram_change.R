@@ -1,4 +1,14 @@
-
+#' gram_changer
+#'
+#' @param x An integer.
+#' @param unit The unit of measurement used for the integer x.
+#' @param desired_unit The unit of measurement you would like the integer to be changed into.
+#'
+#' @returns A changed integer with the desired unit after
+#' @export
+#'
+#' @examples
+#' gram_change(1205.24, "mg", "g")
 gram_change <- function(x, unit, desired_unit) {
   #check if x is numeric. x will be multiplied or divided
   if (!is.numeric(x)) {
