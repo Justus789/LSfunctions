@@ -22,6 +22,27 @@ You can install the development version of LSfunctions from
 pak::pak("Justus789/LSfunctions")
 ```
 
+## Usage
+
+There are 4 functions in this package. The first function is
+gram_change, which is used a conversion function. This function can
+change a unit into another unit. This way you dont have to calculate the
+conversion yourself.
+
+The second function is dilute(), which can be used to calculate the last
+value if you have 3 values of the formula. The standard formula is C1 \*
+V1 = C2 \* V2.
+
+The third function can help motivate you if you. With doorzetten() there
+are a few prepared answers to put in. In the ?doorzetten you can find a
+few of these answers.
+
+The last function is files() which gives the working directory and a
+list of the directories from the given path. This can help when you are
+confused why a file cant be reached. Sometimes its because the file you
+are working at is further away from the working directory than you
+thought.
+
 ## Example
 
 LSfunctions has multiple functions implemented. For all of them an
@@ -31,7 +52,11 @@ example will be shown.
 library(LSfunctions)
 
 #gram_change(1, "g", "mg")
+#dilution(C1 = 20, V1 = 30, C2 = 10)
+#doorzetten("bijna")
+#files("kort")
 ```
 
-In the ?gram_change() are more examples and tests if more information is
-needed.
+In the ?desired_function() are more examples and tests if more
+information is needed. Especially for doorzetten() the Help page can be
+usefull to find the possible answers.

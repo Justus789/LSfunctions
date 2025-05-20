@@ -8,32 +8,22 @@
 #' @export
 #'
 #' @examples
-#' files("kort", "/tests/")
+#' files("kort")
 #' files("lang")
-files <- function(x, dir_path = NA) {
-  if (x == "kort") {
-    if (is.na(dir_path)) {
-      print("Hieronder de lijst met je files")
-      print(list.files(path = ".", recursive = TRUE, full.names = TRUE))
-    }
-    else {
-      print(paste("vanaf", paste0(getwd(), dir_path), "gaat de structuur zo"))
-      print(list.files(path = paste0(getwd(), dir_path), recursive = TRUE))
-    }
+files <- function(x, dir_path = ".") {
+  if (!x %in% c("kort", "lang")) {
+    stop("Invalid option for 'x'. Please use 'kort' or 'lang'.")
   }
-  if (x == "lang") {
-    if (is.na(dir_path)) {
-      print("Hieronder de lijst met je files")
-      print(list.files(path = ".", recursive = TRUE, full.names = TRUE))
-    }
-    else {
-      print(paste("vanaf", paste0(getwd(), dir_path), "gaat de structuur zo"))
-      print(list.files(path = paste0(getwd(), dir_path), recursive = TRUE, full.names = TRUE))
-    }
+
+  if (!dir.exists(dir_path)) {
+    stop("Directory does not exist: ", dir_path)
   }
-  if (is.na(x)) {
-    # If an invalid argument is passed
-    stop("Invalid option. Please use 'kort' or 'lang'.")
-  }
+  message("Dit is de working directory:\n", getwd())
+  message("vanaf ", normalizePath(dir_path), " gaat de structuur zo:")
+  files_list <- list.files(path = dir_path,
+                           recursive = TRUE,
+                           full.names = (x == "lang"))
+
+  return(files_list)
 }
 

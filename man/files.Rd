@@ -2,9 +2,9 @@
 % Please edit documentation in R/files.R
 \name{files}
 \alias{files}
-\title{files()}
+\title{files}
 \usage{
-files(x, dir_path = NA)
+files(x, dir_path = ".")
 }
 \arguments{
 \item{x}{either "kort" or "lang"}
@@ -15,9 +15,9 @@ files(x, dir_path = NA)
 A character string with information about working directory and a list with the folder structure
 }
 \description{
-files()
+files
 }
 \examples{
-files("kort", "/tests/")
+files("kort")
 files("lang")
 }
