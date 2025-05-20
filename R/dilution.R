@@ -9,7 +9,7 @@
 #' @export
 #'
 #' @examples
-#' dilution(C1 = 5, V1 = 10, C2 = 1, V2 = 20)
+#' dilution(C1 = 5, V1 = 10, C2 = 1)
 dilution <- function(C1 = NA, V1 = NA, C2 = NA, V2 = NA) {
   #Count if input is missing
   inputs <- c(C1, V1, C2, V2)
