@@ -1,6 +1,4 @@
 
-load_all()
-
 gram_change <- function(x, unit, desired_unit) {
   #check if x is numeric. x will be multiplied or divided
   if (!is.numeric(x)) {
@@ -46,5 +44,3 @@ gram_change <- function(x, unit, desired_unit) {
   return(paste0(result, " ", desired_unit))
 }
 
-#gram_change(180000.00, "mg", "kg")
-#gram_change(20.74, "g", "ug")
