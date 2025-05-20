@@ -24,7 +24,8 @@ pak::pak("Justus789/LSfunctions")
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
+LSfunctions has multiple functions implemented. For all of them an
+example will be shown.
 
 ``` r
 library(LSfunctions)
@@ -32,9 +33,5 @@ library(LSfunctions)
 #gram_change(1, "g", "mg")
 ```
 
-This is an example of how gram_change() can fail:
-
-``` r
-
-#gram_change(20, "kg", "ng")
-```
+In the ?gram_change() are more examples and tests if more information is
+needed.
