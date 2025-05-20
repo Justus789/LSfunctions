@@ -3,5 +3,3 @@
 export(dilution)
 export(doorzetten)
 export(gram_change)
-export(project)
-importFrom(utils,head)
