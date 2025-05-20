@@ -2,4 +2,5 @@
 
 export(dilution)
 export(doorzetten)
+export(files)
 export(gram_change)
