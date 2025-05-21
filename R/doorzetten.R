@@ -29,4 +29,4 @@ doorzetten <- function(x) {
     return("Deze function heeft een paar antwoorden voorbereidt die je kan gebruiken. Check de ?doorzetten om ze te vinden.")
   }
 }
-doorzetten("meteen")
+

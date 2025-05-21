@@ -1,29 +1,15 @@
 
-#' files
+#' potter
 #'
-#' @param x either "kort" or "lang"
-#' @param dir_path a path from which you want the list of folders
+#' @param x A number/integer or character string
 #'
-#' @return A character string with information about working directory and a list with the folder structure
+#' @return A character string with information about which book the number or string is in the series
 #' @export
 #'
 #' @examples
-#' files("kort")
-#' files("lang")
-files <- function(x, dir_path = ".") {
-  if (!x %in% c("kort", "lang")) {
-    stop("Invalid option for 'x'. Please use 'kort' or 'lang'.")
-  }
-
-  if (!dir.exists(dir_path)) {
-    stop("Directory does not exist: ", dir_path)
-  }
-  message("Dit is de working directory:\n", getwd())
-  message("vanaf ", normalizePath(dir_path), " gaat de structuur zo:")
-  files_list <- list.files(path = dir_path,
-                           recursive = TRUE,
-                           full.names = (x == "lang"))
-
-  return(files_list)
+#' potter(4)
+potter <- function(x) {
+  titles <- list("Philosopher's Stone", "Chamber of Secrets", "Prisoner of Azkaban", "Goblet of Fire", "Order of the Phoenix", "Half-Blood Prince", "Deathly Hallows")
+  return(paste0("That is the book ", titles[x], " in the series"))
 }
 
