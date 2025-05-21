@@ -1,9 +1,9 @@
 
 #' potter
 #'
-#' @param x A number/integer or character string
+#' @param x A number/integer ranging from 1 till 7
 #'
-#' @return A character string with information about which book the number or string is in the series
+#' @return A character string with information about which book the number is in the series
 #' @export
 #'
 #' @examples

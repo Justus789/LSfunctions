@@ -7,10 +7,10 @@
 potter(x)
 }
 \arguments{
-\item{x}{A number/integer or character string}
+\item{x}{A number/integer ranging from 1 till 7}
 }
 \value{
-A character string with information about which book the number or string is in the series
+A character string with information about which book the number is in the series
 }
 \description{
 potter
