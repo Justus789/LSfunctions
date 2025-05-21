@@ -37,11 +37,10 @@ The third function can help motivate you if you. With doorzetten() there
 are a few prepared answers to put in. In the ?doorzetten you can find a
 few of these answers.
 
-The last function is files() which gives the working directory and a
-list of the directories from the given path. This can help when you are
-confused why a file cant be reached. Sometimes its because the file you
-are working at is further away from the working directory than you
-thought.
+The last function is potter() can tell you the tittle of a Harry Potter
+book. Image you want to know the title of the fourth book in the book
+series. Just ask potter(). Use potter(4) and it wil tell you the title
+of this book.
 
 ## Example
 
@@ -54,7 +53,7 @@ library(LSfunctions)
 #gram_change(1, "g", "mg")
 #dilution(C1 = 20, V1 = 30, C2 = 10)
 #doorzetten("bijna")
-#files("kort")
+#potter(5)
 ```
 
 In the ?desired_function() are more examples and tests if more
