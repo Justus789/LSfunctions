@@ -39,7 +39,7 @@ The second function is dilute(), which can be used to calculate the last value i
 
 The third function can help motivate you if you. With doorzetten() there are a few prepared answers to put in. In the ?doorzetten you can find a few of these answers.
 
-The last function is potter() can tell you the tittle of a Harry Potter book. Image you want to know the title of the fourth book in the book series. Just ask potter(). Use potter(4) and it wil tell you the title of this book.
+The last function is potter() can tell you the tittle of a Harry Potter book. Image you want to know the title of the fourth book in the book series. Just ask potter(). Use potter(4) and it wil tell you the title of this book. You can also use a string if you only remember the title partially.
 
 ## Example
 

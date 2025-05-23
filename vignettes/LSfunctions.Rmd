@@ -56,13 +56,12 @@ This function has a few predetermined inputs. These are: "ja", "nee", "bijna" en
 doorzetten("bijna")
 
 ```
-The last function is potter(). This function is made for people who forget the names of the book from Harry Potter. This function can give the title of the book you forgot. As long as you remember which part the book is in the series. 
+The last function is potter(). This function is made for people who forget the names of the book from Harry Potter. This function can give the title of the book you forgot and which book it is. Just give potter() the number or a partial title of  the book. 
 
 ```{r harry}
 
 potter(5)
-
-
+potter("half")
 ```
 
 

@@ -7,7 +7,7 @@
 potter(x)
 }
 \arguments{
-\item{x}{A number/integer ranging from 1 till 7}
+\item{x}{A number/integer ranging from 1 till 7. Can also be a string, if you remember a part of the title.}
 }
 \value{
 A character string with information about which book the number is in the series
@@ -17,4 +17,5 @@ potter
 }
 \examples{
 potter(4)
+potter("goblet")
 }

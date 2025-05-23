@@ -40,7 +40,8 @@ few of these answers.
 The last function is potter() can tell you the tittle of a Harry Potter
 book. Image you want to know the title of the fourth book in the book
 series. Just ask potter(). Use potter(4) and it wil tell you the title
-of this book.
+of this book. You can also use a string if you only remember the title
+partially.
 
 ## Example
 
